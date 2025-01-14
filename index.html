@@ -1,0 +1,148 @@
+                                                                    <!-- Projeto final -  
+                                                                     
+    Desenvolva uma página de portfólio pessoal utilizando HTML, CSS, e, se desejado, JavaScript para interatividade. A página deve apresentar suas informações pessoais, habilidades, projetos, e formas de contato.
+
+    Estrutura HTML:
+    
+    - Incluir uma seção de introdução com uma breve biografia e uma imagem de perfil.
+    - Criar seções dedicadas para listar suas habilidades, projetos anteriores, e experiências profissionais.
+    - Adicionar uma seção de contato com links para suas redes sociais e um formulário de contato.
+    
+    Estilização com CSS: 
+    - Utilize Flexbox ou Grid para organizar o layuout da página.
+    - Aplique estilos personalizados para destaccar seções importantes, como projetos e habilidades.
+    - Implemente Media Queries para garantir que o portfólio seja responsivo e adaptável a diferentes tamanhos de tela.
+    
+    Objetivo: Criar uma página de portfólio que represente suas habilidades e experiências de forma profissional e atraente, ao mesmo tempo em que pratica o uso de HTML, CSS, e técni
+    cas de design responsivo.                                                         
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="conteiner-pai">
+            <div class="conteiner-main">
+                <aside>
+                    <div class="projetos">
+                        <h2>PROJETOS</h2>
+                        <nav>
+                            <ul>
+                                <li><a href="projetos/projeto-01/index.html" target="_blank">Player de Música</a></li>
+                                <li><a href="projetos/projeto-02/index.html" target="_blank">Chat</a></li>
+                                <li><a href="projetos/projeto-03/index.html" target="_blank">Calculadora</a></li>
+                                <li><a href="projetos/projeto-04/index.html" target="_blank">Cartão de Embarque</a></li>
+                                <li><a href="projetos/projeto-05/index.html" target="_blank">Dashboard</a></li>
+                                <li><a href="projetos/projeto-06/index.html" target="_blank">Página de Clima</a></li>
+                                <li><a href="projetos/projeto-07/index.html" target="_blank">Página de Login</a></li>
+                                <li><a href="projetos/projeto-08/index.html" target="_blank">Kanban</a></li>
+                            </ul>
+                        </nav>
+                        <section>
+                                <div class="habilidades">
+                                   <h2>Habilidades</h2>
+                                   <ul>
+                                       <li>Comunicação</li>
+                                       <li>Adaptabilidade</li>
+                                       <li>Interesse em Aprender</li>
+                                       <li>Trabalho em equipe</li>
+                                       <li>Resolução de problema</li>
+                                       <li>Paciência</li>
+                                   </ul>
+                                </div>
+                        </section>
+                    </div>
+                   
+                </aside>
+                <!-- Quem sou eu  -->
+                <section>
+                    <div class="igor">
+                        <div class="imagem"><img src="imagens/Igor.jpg" alt="Igor"></div>
+                            <div class="descrição">
+                                <p>
+                                Olá, meu nome é Igor, tenho 28 anos, resido em Fortaleza, Ceará. <br>
+                                Trabalho atualmente como assistente financeiro. Estou estudando programação e inglês, pois desejo atuar na área de TI.
+                                <!-- Redes sociais -->
+                                <div class="icones">
+                                    <p>Redes sociais:</p>
+                                    <div clas="redes-sociais">
+                                        <a href="https://www.instagram.com/igor.o.florencio/" target="_blank"><img src="imagens/icones/instagram.png" alt="Instagram"></a>
+                                        <a href="https://www.facebook.com/Igorflorencio20" target="_blank"><img src="imagens/icones/facebook.png" alt="facebook"></a>
+                                        <a href="https://github.com/igorflorencio28" target="_blank"><img src="imagens/icones/github.png" alt="github"></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+                <!-- Habilidades -->
+
+                 <!-- Experiência profissional -->
+                 <section>
+                     <div class="experiências-profissionais">
+                        <div class="experiencias">
+                            <h2>Experiências Profissionais</h2>
+                            <div class="cargo1">
+                                <h3>- Assistente financeiro</h3>
+                                <ul>
+                                    <li class="descrição-função">Responsável pela organização dos pagamentos da empresa, fazendo lançamento dos pagamentos no sistema.</li>
+                                    <li class="descrição-função">Fazer o arquivo remessa no banco</li>
+                                    <li class="descrição-função">Faturamento</li>
+                                    <li class="descrição-função">Conferência bancária</li>
+                                    <li class="descrição-função">Conferência da fatura do cartão
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cargo2">
+                                <h3>- Auxiliar de armazenamento</h3>
+                                <ul>
+                                    <li class="descrição-função">Responsável pelo armazenamento, organização das avarias da loja e emissão de notas de devolução.</li>
+                                </ul>
+                            </div>
+                            <!-- cargo 1 -->
+                            <div class="cargo3">
+                                <h3>- Empacotador</h3>
+                                <ul>
+                                    <li class="descrição-função">Auxílio no empacotamento das compras dos clientes e atendimento em geral</li>
+                                </ul>
+                                <!-- cargo 2 -->
+                                <h3>- Auxiliar de depósito</h3>
+                                <ul>
+                                    <li class="descrição-função">Auxílio no armazenamento, descarregamento e organização das mercadorias</li>
+                                </ul>
+                                <!-- cargo 3 -->
+                                 <h3>- Assistente de prevenção</h3>
+                                 <ul class="descrição-função">
+                                    <li >Responsável pelo controle de avarias, descarte, emissão de notas fiscais e participação de inventários</li>
+                                 </ul>
+                                 <!-- cargo 4 -->
+                                 <h3>- Encarregado de prevenção</h3>
+                                 <ul>
+                                    <li class="descrição-função">Responsável pela supervisão dos inventários e correção de estoque das lojas</li>
+                                 </ul>
+                            </div>
+                     </section>
+
+                    <section>
+                        <div class="contato">
+                            <div class="box">
+                                <h2>Contato</h2>
+                                <label for="email">E-mail:</label >
+                                <input type="email" id="email" name="Digite seu e-mail" placebolder="Digite seu e-mail">
+                                <label for="texto">Sobre o que você quer falar comigo? Deixe suas dúvidas, sugestões, elogios ou comentários.</label>
+                                <textarea name="mensagem" id="mensagem" rows="12" cols="5"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

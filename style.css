@@ -1,0 +1,451 @@
+                                                                            /*  Projeto final -  
+                                                                     
+    Desenvolva uma página de portfólio pessoal utilizando HTML, CSS, e, se desejado, JavaScript para interatividade. A página deve apresentar suas informações pessoais, habilidades, projetos, e formas de contato.
+
+    Estrutura HTML:
+    
+    - Incluir uma seção de introdução com uma breve biografia e uma imagem de perfil.
+    - Criar seções dedicadas para listar suas habilidades, projetos anteriores, e experiências profissionais.
+    - Adicionar uma seção de contato com links para suas redes sociais e um formulário de contato.
+    
+    Estilização com CSS: 
+    - Utilize Flexbox ou Grid para organizar o layuout da página.
+    - Aplique estilos personalizados para destaccar seções importantes, como projetos e habilidades.
+    - Implemente Media Queries para garantir que o portfólio seja responsivo e adaptável a diferentes tamanhos de tela.
+    
+    Objetivo: Criar uma página de portfólio que represente suas habilidades e experiências de forma profissional e atraente, ao mesmo tempo em que pratica o uso de HTML, CSS, e técni
+    cas de design responsivo.         */
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Creepster&family=Eater&family=Fjalla+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trocchi&display=swap');
+
+@media (max-width: 2560px) {
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+    height: 100vh;
+    background: linear-gradient(135deg, #0F2027, #2C5364, #00A896, #6bd1e0, #F4F9F9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-main {   
+    background: linear-gradient(300deg, rgb(217, 217, 223) 0%, rgb(165, 167, 145) 100%);
+
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 2px 2px 5px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(imagens/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: 1970px 300px;
+    background-position: top right;
+}
+
+.igor {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 330px;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: rgba(250, 235, 215, 0.384);
+    height: 850px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+    box-shadow: 1px 1px 1px;
+    
+}
+
+.igor img {
+    width: 270px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.igor p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.icones {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icones p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.icones img {
+    margin-top: 45px;
+    width: 50px;
+}
+
+.habilidades {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: rgba(250, 235, 215, 0.384);
+    font-size: 25px;
+    height: 400px;
+    color: white;
+}
+.habilidades h2 {
+    margin-bottom: 20px;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.projetos {
+    width: 400px;
+    height: 1275px;
+    background-color: rgba(29, 28, 28, 0.692);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.projetos a:hover {
+    color: rgb(255, 115, 0);
+}
+
+.projetos h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.experiências-profissionais {
+    display:flex;
+    justify-content: flex-end;
+    border-style: solid;
+    border-color: rgba(250, 235, 215, 0.384);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+    font-size: 20px;
+    width: 880px;
+    height: 850px;
+    margin-top: 330px;
+    margin-left: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.experiências-profissionais h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cargo2{
+    margin-top: 30px;
+}
+
+.cargo3 {
+    margin-top: 30px;
+}
+ul {
+    list-style: square;
+}
+
+.descrição-função {
+    list-style: circle;
+}
+
+.contato {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1275px;
+    flex-wrap: wrap;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.box {
+    border-style: solid;
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    border-color: rgba(250, 235, 215, 0.384);
+    box-shadow: 1px 1px 1px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+textarea {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+label {
+    margin-left: 5px;
+}
+}
+
+/* Telas Full HD */
+@media (min-width: 1920px) and (max-width: 2559px) {
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Oswald';
+        height: 100vh;
+        background: linear-gradient(135deg, #0F2027, #2C5364, #00A896, #6bd1e0, #F4F9F9);
+    }
+    
+    .conteiner-main {   
+        background: linear-gradient(300deg, rgb(217, 217, 223) 0%, rgb(165, 167, 145) 100%);
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 2px 2px 5px 1px;
+        height: 950px;
+        width: 1820px;
+        display: flex;
+        flex-wrap: nowrap;
+        background-image: url(imagens/paisagem.jpg);
+        background-repeat: no-repeat;
+        background-size: 1520px 300px;
+        background-position: top right;
+    }
+    
+    .igor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 330px;
+        margin-left: 20px;
+        border-style: solid;
+        border-color: rgba(250, 235, 215, 0.384);
+        width: 400px;
+        height: 600px;
+        border-radius: 20px;
+        padding-bottom: 90px;
+        box-shadow: 1px 1px 1px;
+        
+    }
+    
+    .igor img {
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 130px;
+        margin-left: 10px;
+    }
+    
+    .igor p {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    .icones {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .icones p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .icones img {
+        margin-top: 45px;
+        width: 40px;
+    }
+    
+    .habilidades {
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px;
+        margin-bottom: 50px;
+        border-style: solid;
+        border-color: rgba(250, 235, 215, 0.384);
+        font-size: 20px;
+        height: 320px;
+        color: white;
+    }
+    .habilidades h2 {
+        margin-bottom: 10px;
+    }
+    
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    }
+    
+    .projetos {
+        width: 300px;
+        height: 950px;
+        background-color: rgba(29, 28, 28, 0.692);
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+        color: white;
+        gap: 20px;
+        padding-top: 50px;
+    }
+    
+    .projetos a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+    
+    .projetos a:hover {
+        color: rgb(255, 115, 0);
+    }
+    
+    .projetos h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        color: white;
+    }
+    
+    .experiências-profissionais {
+        display:flex;
+        justify-content: flex-end;
+        border-style: solid;
+        border-color: rgba(250, 235, 215, 0.384);
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px;
+        font-size: 15px;
+        width: 650px;
+        height: 600px;
+        margin-top: 330px;
+        margin-left: 20px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .experiências-profissionais h2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cargo2{
+        margin-top: 30px;
+    }
+    
+    .cargo3 {
+        margin-top: 30px;
+    }
+    ul {
+        list-style: square;
+    }
+    
+    .descrição-função {
+        list-style: circle;
+    }
+    
+    .contato {
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 375px;
+        flex-wrap: wrap;
+    }
+    
+    .contato h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .box {
+        border-style: solid;
+        height: 450px;
+        width: 350px;
+        border-radius: 20px;
+        border-color: rgba(250, 235, 215, 0.384);
+        box-shadow: 1px 1px 1px;
+        margin-top: 400px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    input {
+        display: block;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        height: 30px;
+        width: 300px;
+    }
+    textarea {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    label {
+        margin-left: 5px;
+    }
+}
+
