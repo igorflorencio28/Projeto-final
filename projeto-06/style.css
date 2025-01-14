@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}                         
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.conteiner {
+    background-image: url(imagens/fundo/Projeto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+}
+
+.conteiner-principal {
+    display: flex;
+    padding-left: 80px;
+}
+
+.caixa-01 {
+    background-image: url(imagens/fundo/Temperature\ Now\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 580px;
+    background-position: 50px 60px;
+}
+
+.numeros {
+        margin-left: 230px;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.imagem-02 {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.clima {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 215px;
+}
+
+/* caixa 02 */
+
+.conteiner-principal-02 {
+    padding-top:20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caixa-02 {
+    background-color: #6D67D0;
+    width: 277px;
+    height: 244px;
+    border-radius: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.dupla {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 95px;
+}
+
+.caixa-03 {
+    background-color: #6D67D0;
+    width: 277px;
+    height: 244px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.horario-sol {
+    padding-right: 20px;
+}
+
+.conteiner-principal-03 {
+    background-color: #6D67D0;
+    width: 578px;
+    height: 212px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

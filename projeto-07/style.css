@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.conteiner {
+    width: 1440px;
+    height: 900px;
+    display: flex;
+}
+
+.caixa-01 {
+    width: 736px;
+    height: 900px;
+    background-color: #ffffff;
+}
+
+.caixa-02 {
+    background-image: url(imagens-caixa01/Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 736px;
+    height: 900px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.conteudo {
+    padding-left: 100px;   
+}
+
+.titulo-01 {
+    padding-top: 140px;
+}
+
+.titulo-02 {
+    padding-top: 30px;
+}
+
+.e-mail { 
+    padding-top: 50px;
+    padding-bottom: 10px
+}
+
+.input-email {
+    padding-bottom: 10px;
+}
+
+.senha {
+    padding-bottom: 10px;
+}
+
+.input-senha {
+    padding-bottom: 30px;
+}
+
+.botao {
+    padding-bottom: 30px;
+}

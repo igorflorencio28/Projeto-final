@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.conteiner {
+    background-color: #292738;
+    width: 1366px;
+    height: 975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* caixa 1 */
+
+.box1 {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    place-content: center;
+    place-items: center;  
+    width: 296px; 
+    height: 379px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+/* caixa2 */
+.box2 {
+
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    place-content: center;
+    place-items: center;  
+    width: 296px; 
+    height: 379px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.porcentagem {
+    width: 200px;
+}
+
+/* caixa 3 */
+.box3 {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    place-content: center;
+    place-items: center;  
+    width: 350px; 
+    height: 379px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.porcentagem2 {
+    width: 200px;
+}
+
+.resultado {
+    border-radius: 20px;
+    display: flex;
+    width: 980px; 
+    height: 314px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.068);
+    margin-top: 30px;
+}
+
+.vendas img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.graficos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graficos img {
+    width: 400px;
+    padding-right: 50px;
+    padding-top: 90px
+}
+
